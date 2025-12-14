@@ -12,7 +12,7 @@ Configurar una DMZ segura en Cisco Packet Tracer separando LAN, DMZ y red extern
 
 A continuación se muestra una imagen de la topología de la red:
 
-![Topología de red](evidencias/esquema.png)
+![Topología de red](../evidencias/esquema.png)
 
 - **Cantidad de redes:** 3 (LAN, DMZ, Externa)
 - **Dispositivos usados:**
@@ -99,16 +99,16 @@ exit
 Se han realizado las siguientes verificaciones:
 
 - `ping` desde PC_Internal al router:
-![ping desde PC_Internal al router](evidencias/ping_PC_Internal_Router.png)
+![ping desde PC_Internal al router](../evidencias/ping_PC_Internal_Router.png)
 
 - acceso web desde PC_External:
-![acceso web desde PC_External](evidencias/conex_PC_External_Servidor_DMZ.png)
+![acceso web desde PC_External](../evidencias/conex_PC_External_Servidor_DMZ.png)
 
 - bloqueo de acceso desde DMZ a LAN:
-![bloqueo de acceso desde DMZ a LAN](evidencias/conex_Ping_Servidor_DMZ_PC_Internal.png)
+![bloqueo de acceso desde DMZ a LAN](../evidencias/conex_Ping_Servidor_DMZ_PC_Internal.png)
 
 - bloqueo ICMP desde PC_External a WAN/IP pública del servidor:
-![bloqueo ICMP desde PC_External a WAN](evidencias/conex_PC_External_Ping_Servidor_DMZ.png)
+![bloqueo ICMP desde PC_External a WAN](../evidencias/conex_PC_External_Ping_Servidor_DMZ.png)
 
 
 
@@ -133,10 +133,10 @@ Recomendaciones:
 ### 7. Capturas de evidencia
 
 - ver configuración interfaces
-![configuración interfaces](evidencias/conf_Interfaces_Router.png) 
+![configuración interfaces](../evidencias/conf_Interfaces_Router.png) 
 
 - ver access-lists
-![accesss-lists ACLs](evidencias/conf_ACLs.png)
+![accesss-lists ACLs](../evidencias/conf_ACLs.png)
 
 - ver NAT translations
-![NAT translations](eidencias/conf_NAT.png)
+![NAT translations](../evidencias/conf_NAT.png)
