@@ -65,6 +65,7 @@ Acto seguido ejecutamos un "write memory" para guardar los cambios en la configu
 Más adelante configuramos las ACLs:
 
 - ACL_WEB_DMZ
+
 Creamos la ACL;
 ```bash
 ip access-list extended ACL_WEB_DMZ
@@ -78,6 +79,7 @@ ip access-group ACL_WEB_DMZ in
 exit
 ```
 - ACL_DMZ_LAN
+
 Creamos la ACL;
 ```bash
 ip access-list extended ACL_DMZ_LAN
@@ -99,15 +101,19 @@ exit
 Se han realizado las siguientes verificaciones:
 
 - `ping` desde PC_Internal al router:
+
 ![ping desde PC_Internal al router](../evidencias/ping_PC_Internal_Router.png)
 
 - acceso web desde PC_External:
+
 ![acceso web desde PC_External](../evidencias/conex_PC_External_Servidor_DMZ.png)
 
 - bloqueo de acceso desde DMZ a LAN:
+
 ![bloqueo de acceso desde DMZ a LAN](../evidencias/conex_Ping_Servidor_DMZ_PC_Internal.png)
 
 - bloqueo ICMP desde PC_External a WAN/IP pública del servidor:
+
 ![bloqueo ICMP desde PC_External a WAN](../evidencias/conex_PC_External_Ping_Servidor_DMZ.png)
 
 
@@ -133,10 +139,13 @@ Recomendaciones:
 ### 7. Capturas de evidencia
 
 - ver configuración interfaces
+
 ![configuración interfaces](../evidencias/conf_Interfaces_Router.png) 
 
 - ver access-lists
+
 ![accesss-lists ACLs](../evidencias/conf_ACLs.png)
 
 - ver NAT translations
+
 ![NAT translations](../evidencias/conf_NAT.png)
